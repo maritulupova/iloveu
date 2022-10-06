@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .btn {
+        border-style: solid;
+        background-color: pink;
+      }
+
+      .btn:active {
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <button class='btn'>Кликни, солнышко <3 </button>
+      <div></div>
+
+      <script>
+
+          (function () {
+              var mas = ['','Ты гей', 'Шучу', 'Я тебя люблю'];
+              var n = 0;
+              var but = document.getElementsByTagName("button")[0];
+              var div = document.getElementsByTagName("div")[0];
+              but.onclick = function () {
+                div.innerHTML = mas[n % mas.length];
+                n++;
+              }
+              but.click();
+          })();
+
+      </script>
+
+
+  </body>
+</html>
