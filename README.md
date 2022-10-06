@@ -1,1 +1,2 @@
 # iloveu
+permalink: /index.html
